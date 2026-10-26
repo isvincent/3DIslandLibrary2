@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#eaf4ee"><meta name="description" content="走進十個學習場域，探索可以旋轉、縮放的 3D 智慧校園數位島嶼。"><title>學習之嶼｜3D 智慧校園</title><link rel="icon" href="./favicon.svg" type="image/svg+xml">  <script type="module" crossorigin src="./assets/index-KVYZIaBv.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-F7ufp2IY.css">
+</head>
+<body>
+  <main id="app">
+    <div id="scene" aria-label="可旋轉與縮放的 3D 校園；也可使用場域清單選取建築"></div>
+    <header class="masthead"><a class="brand" href="./" aria-label="學習之嶼首頁"><span class="brand-mark">嶼</span><span>學習之嶼<small>SMART CAMPUS / V1.0</small></span></a><span class="edition">一座島，十種探索的可能。</span><button id="day" class="pill" aria-pressed="false">◐ 切換夜晚</button></header>
+    <section class="intro"><div class="eyebrow"><span></span> EXPLORE THE POSSIBILITIES</div><h1>讓好奇心，<br>帶你去下一站<span>。</span></h1><p>歡迎來到 3D 智慧校園。<br>點選島上的建築，開啟你的學習旅程。</p></section>
+    <nav class="tools" aria-label="場景工具"><button id="home" title="返回全景">↖ <span>返回全景</span></button><button id="labels" aria-pressed="true" title="建築名稱">Aa <span>名稱標籤</span></button><button id="list-toggle" aria-expanded="false" aria-controls="directory">☷ <span>場域清單</span></button></nav>
+    <aside id="directory" class="directory" hidden><div class="panel-head"><h2>選一站，開始探索</h2><button id="list-close" class="close" aria-label="關閉場域清單">×</button></div><p>十個場域，十種學習想像。</p><div id="locations"></div></aside>
+    <aside id="card" class="info-card" aria-labelledby="card-title" hidden><div class="panel-head"><span id="card-category" class="eyebrow"></span><button id="card-close" class="close" aria-label="關閉介紹並返回全景">×</button></div><div class="card-emblem" aria-hidden="true" id="card-emblem"></div><span id="card-index"></span><h2 id="card-title" tabindex="-1"></h2><p id="card-description"></p><h3>在這裡，你可以學會</h3><ul id="card-goals"></ul><div id="card-tags" class="tags"></div><button id="card-return" class="primary">返回島嶼全景 ↗</button></aside>
+    <div id="loading" class="loading" role="status"><span class="spinner"></span><strong>正在建立你的學習島嶼</strong><span>生成地形、建築與綠意…</span></div>
+    <div id="error" class="error" hidden role="alert"><h2>目前無法顯示 3D 場景</h2><p>請使用支援 WebGL 2 的新版瀏覽器，並確認硬體加速已開啟。你仍可用「場域清單」閱讀介紹。</p><button id="retry">重新載入</button></div>
+    <footer><span class="scene-status"><i></i><span id="scene-status">日間探索</span> <b>／</b> 10 個學習場域</span><span class="gesture desktop">拖曳旋轉 · 滾輪縮放 · 點選建築探索</span><span class="gesture mobile">單指旋轉 · 雙指縮放 · 點選探索</span><span class="coordinates">LEARNING ISLAND <b>25° N</b></span></footer>
+    <div class="compass" aria-hidden="true"><span>N</span><svg viewBox="0 0 60 60"><circle cx="30" cy="30" r="25"/><path d="M30 10 37 37 30 33 23 37Z"/></svg></div>
+    <div id="announcement" class="sr-only" aria-live="polite"></div>
+  </main>
+</body></html>
